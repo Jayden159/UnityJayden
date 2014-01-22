@@ -3,7 +3,9 @@ using System.Collections;
 
 public class Manager : MonoBehaviour
 {
-	public static float deadzone = .1;
+	public float deadzone = 0.1f;
+
+	protected Manager () {}
 
 	// Use this for initialization
 	void Start ()
