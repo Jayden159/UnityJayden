@@ -13,7 +13,7 @@ public class PlayerMover : MonoBehaviour
 	}
 
 	// Update is called once per frame
-	void Update ()
+	void FixedUpdate ()
 	{
 		float hInput = Input.GetAxis("Horizontal");
 		float vInput = Input.GetAxis("Vertical");
@@ -23,7 +23,5 @@ public class PlayerMover : MonoBehaviour
 		float xSpeed = hInput * speed * Time.deltaTime;
 		float ySpeed = vInput * speed * Time.deltaTime;
 		rigidbody2D.velocity = new Vector2(xSpeed, ySpeed);
-
-		Debug.Log(xSpeed);
 	}
 }
